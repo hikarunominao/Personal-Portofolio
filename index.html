@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal portfolio — Web Developer.">
+  <title>Hikaruu__ — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+
+  <div class="pixel pixel-1"></div>
+  <div class="pixel pixel-2"></div>
+
+  <header class="header">
+    <a href="#home" class="brand">
+      <span class="brand-mark">◆</span>
+      <span>Hikaruu__</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Buka menu">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content reveal">
+        <p class="intro">Hello, I'm</p>
+        <h1><strong>Your</strong> Name</h1>
+        <h2>Web Developer &amp; <span class="typed-text"></span><span class="cursor-blink">|</span></h2>
+        <p class="hero-description">
+          Saya membangun website yang sederhana, bersih, dan modern.
+          Saya senang mengubah ide menjadi project nyata dan terus belajar
+          teknologi baru.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#projects" class="button button-dark">View My Projects <span>→</span></a>
+          <a href="#contact" class="button button-light">Contact Me</a>
+        </div>
+
+        <div class="socials">
+          <a href="https://github.com/" target="_blank" aria-label="GitHub">GH</a>
+          <a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn">in</a>
+          <a href="mailto:hello@example.com" aria-label="Email">@</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="visual-frame">
+          <div class="visual-grid"></div>
+          <div class="laptop">
+            <div class="screen">
+              <div class="screen-line wide"></div>
+              <div class="screen-line"></div>
+              <div class="screen-line short"></div>
+              <div class="screen-code">&lt;/&gt;</div>
+            </div>
+            <div class="keyboard"></div>
+          </div>
+          <div class="coffee"></div>
+          <div class="notebook">
+            <span>BUILD</span>
+            <span>CREATE</span>
+            <span>LEARN</span>
+          </div>
+        </div>
+        <div class="visual-label">
+          <span>01</span>
+          <i></i>
+          <span>04</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="section-label">ABOUT ME <span></span></div>
+
+      <div class="about-grid">
+        <div class="about-copy reveal">
+          <h2>A Little About Me</h2>
+          <p>
+            Saya adalah seorang developer yang tertarik dengan dunia teknologi,
+            terutama pengembangan web. Saya suka belajar hal baru, menyelesaikan
+            tantangan, dan membangun sesuatu yang bermanfaat.
+          </p>
+          <p>
+            Saat ini saya terus mengembangkan kemampuan melalui project pribadi
+            dan eksperimen kecil.
+          </p>
+
+          <div class="about-meta">
+            <div>
+              <span class="meta-icon">◆</span>
+              <div><b>Currently Learning</b><small>HTML, CSS, JavaScript</small></div>
+            </div>
+            <div>
+              <span class="meta-icon">●</span>
+              <div><b>Based In</b><small>Indonesia</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div id="skills" class="skills reveal">
+          <div class="section-label">SKILLS <span></span></div>
+          <div class="skill-grid">
+            <div class="skill"><b>5</b><span>HTML</span></div>
+            <div class="skill"><b>3</b><span>CSS</span></div>
+            <div class="skill"><b>JS</b><span>JavaScript</span></div>
+            <div class="skill"><b>↗</b><span>Git</span></div>
+            <div class="skill"><b>GH</b><span>GitHub</span></div>
+            <div class="skill"><b>&lt;/&gt;</b><span>VS Code</span></div>
+            <div class="skill"><b>F</b><span>Figma</span></div>
+            <div class="skill"><b>▣</b><span>Responsive Design</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects">
+      <div class="section-top">
+        <div>
+          <div class="section-label">PROJECTS <span></span></div>
+          <h2>My Projects</h2>
+        </div>
+        <a href="#" class="view-all">View All Projects →</a>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-image image-one"><span>PORTFOLIO</span></div>
+          <div class="project-body">
+            <h3>Personal Portfolio</h3>
+            <p>Website portfolio sederhana dengan desain minimalis dan responsive.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="#">View Code ↗</a>
+              <a href="#">Live Demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image image-two"><span>TODO</span></div>
+          <div class="project-body">
+            <h3>Todo App</h3>
+            <p>Aplikasi todo list sederhana untuk membantu mengatur kegiatan.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="project-links">
+              <a href="#">View Code ↗</a>
+              <a href="#">Live Demo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-image image-three"><span>WEATHER</span></div>
+          <div class="project-body">
+            <h3>Weather App</h3>
+            <p>Aplikasi cuaca menggunakan public API dengan tampilan sederhana.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>API</span></div>
+            <div class="project-links">
+              <a href="#">View Code ↗</a>
+              <a href="#">Live Demo ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-inner">
+        <div>
+          <div class="section-label light">CONTACT <span></span></div>
+          <h2>Let's Work Together</h2>
+          <p>Jika kamu ingin bekerja sama, punya project, atau sekadar ingin berkenalan, jangan ragu untuk menghubungi saya.</p>
+        </div>
+
+        <div class="contact-links">
+          <a href="mailto:hello@example.com"><b>@</b><span>--</span></a>
+          <a href="https://github.com/" target="_blank"><b>GH</b><span>https://github.com/hikarunominao</span></a>
+          <a href="https://linkedin.com/" target="_blank"><b>in</b><span>--</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 YourName. All rights reserved.</span>
+    <a href="#home">Back to Top ↑</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
